@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(142, 199, 142);
+  background-color: rgb(141, 233, 141);
   width: 100%;
   min-height: 100vh;
   display: grid;
@@ -14,17 +14,17 @@ body {
 }
 
 div.box {
-  min-width: 500px;
+  min-width: 600px;
   background-color: white;
   border-radius: 20px;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
 }
 
 /*Duvida no color*/
 div.box h1{
   font-size: 22pt;
-  color:rgb(80,80,80);
+  color:rgb(27, 26, 26);
   margin: 30px 0;
 }
 
@@ -33,49 +33,16 @@ div.box button{
   padding: 10px 20px;
   border: 0;
   border-radius: 8px;
-  background-color: rgb(66, 192, 66);
+  background-color: rgb(66, 223, 66);
   color:white;
   cursor: pointer;
 }
 
-img {
-  text-align: left !important;
-}
-
-
-/* Padrão do sistema*/
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
-}
-
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
+div.box div{
+  font-size: 40px;
+  font-family: arial black;
+  letter-spacing: 5px;
   text-align: center;
-  text-decoration: none;
-  color: #555;
-}
+  color:rgb(38, 41, 38);
 
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
-}
-
-main {
-  padding: 1rem;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
 }

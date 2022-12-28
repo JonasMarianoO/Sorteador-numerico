@@ -1,4 +1,4 @@
-const botaoSortear = document.querySelector('div.box button');
+/*const botaoSortear = document.querySelector('div.box button');
 
 var numeroSorteado = document.querySelector('div.box h1');
 var roleta = [];
@@ -10,19 +10,23 @@ roleta.push(i)
 
 botaoSortear.addEventListener('click', () => {
 numeroSorteado.innerHTML = roleta[Math.floor([Math.random() * roleta.length])];
+});*/
+
+function getRandomNumbers() {
+  let numbers = [];
+
+  while (numbers.length < 6) {
+    let randomNumber = Math.floor(Math.random() * 60) + 1;
+    if (!numbers.includes(randomNumber)) {
+      numbers.push(randomNumber);
+    }
+  }
+
+  return numbers;
+}
+
+document.getElementById('button').addEventListener('click', function() {
+  let numbers = getRandomNumbers();
+  document.getElementById('numbers').innerHTML = numbers.join(' ');
 });
 
-//var sorteados = [];
-
-//function sorteio() {
- // return Math.floor(Math.random() * 60);
-//}
-
-//while (sorteados.length < 6) {
- // var resultado = sorteio();
-//  if (sorteados.indexOf(resultado) === -1) {
- //   sorteados.push(resultado);
- // }
-  //resultado.innerHtml;
-  //console.log(resultado);
-//}
